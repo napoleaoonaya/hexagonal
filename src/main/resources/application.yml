@@ -1,0 +1,18 @@
+server:
+  port: 8086
+
+spring:
+  jackson:
+    mapper:
+      DEFAULT_VIEW_INCLUSION: false
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/hexagonal?authSource=admin
+      username: root
+      password: example
+
+hexagonal:
+  client:
+    address:
+      url: http://localhost:8082/addresses
+
